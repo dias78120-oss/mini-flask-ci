@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Простой калькулятор</h1>
+    <form method="post">
+        <input type="number" name="num1" placeholder="Первое число" required>
+        <input type="number" name="num2" placeholder="Второе число" required>
+        <button type="submit">Посчитать</button>
+    </form>
+    {% if result != "" %}
+        <h2>Результат: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
